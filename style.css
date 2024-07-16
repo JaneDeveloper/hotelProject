@@ -1,0 +1,4368 @@
+
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/*Navigation bar, hero image, logo start here */
+
+.main_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 2fr;
+    height: auto;
+ 
+ }
+
+ header::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: #383838;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    z-index: 0;
+ }
+ .big_text {
+    z-index: 1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 50px;
+    line-height: 1.8;
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end:3;
+    left:-535px;
+    position:relative;
+    text-shadow: 4px 8px 4px #000000;
+    opacity:0.8;
+
+ }
+
+header {
+    background-image: url(images/background2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height:auto;
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:2;
+    display:grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows:30% 70%;
+
+  }
+  .navbar {
+    background-color: grey;
+    border-radius: 10px;
+    height: 120px;
+    margin-top:30px;
+    margin-left:30px;
+    margin-right:30px;
+    grid-column-start:1;
+    grid-column-end: 4;
+    display:grid;
+    grid-template-columns: 20% 65% 15%;
+    z-index: 999;
+    box-shadow:16px 10px 10px #383838;  
+}
+
+  .logo{
+    grid-column-start:1;
+    grid-column-end: 2;
+    margin-left: 20px;
+   
+    
+
+  }
+  .logo_cat {
+    grid-column-start:1;
+    grid-column-end: 2;
+    height: 80px;
+    width:auto;
+    
+  }
+  nav {
+    grid-column-start:2;
+    grid-column-end: 3;
+  }
+ 
+  .nav_links {
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 25px;
+    margin-right: 30px;
+    text-align: center;
+    border-top:2px  groove white;
+    border-bottom:2px groove white;
+    z-index:5000;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .nav_links li a:hover {
+    color:black;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+ .nav_links li {
+    display:inline-block;
+    padding: 20px;
+}
+
+.hamburger_menu {
+    display:none;
+}
+/*Navigation bar, hero image, logo end here.*/
+
+
+.main {
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end:3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height:auto;
+}
+footer {
+    background-color:#393A3F;
+    color:white;
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:4;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+    
+  }
+  
+
+
+
+
+
+
+/*Home page starts here. */
+
+.welcome_container{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start:1;
+    grid-row-end:2;
+
+}
+.three_photos {
+    grid-column-start:2;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:2;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #00292a;
+ 
+   
+}
+
+.inside_welcome {
+    border-left: 4px solid #585a59;
+    border-right: 4px solid #585a59;
+    margin-top: 130px;
+    width:45vw;
+    margin-left:auto;
+    margin-right:auto;
+
+
+}
+.inside_welcome h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    font-weight: 800;
+    text-align:center;
+    font-size: 40px;
+    color:#282928;
+  }
+
+  .text {
+    background-color: #DEDFE4;
+    font-size: 20px;
+    line-height: 1.8;
+    color:#282928;
+    padding:10px;
+  }
+  .inside_three_photos {
+    border-bottom: 4px solid #585a59;
+    border-top: 4px solid #585a59;
+    background-color: #790001;
+    height:50vh;
+    color:#6c6f6d;
+    margin-top: 200px;
+    grid-column-start:1;
+    grid-column-end: 3;
+    z-index: 888;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50% 50%;
+}
+.square {
+    background-color: #DEDFE4;
+    height: 700px;
+    width: 100%;
+    margin-top: 60px;
+    grid-column-start:2;
+    grid-column-end:3;
+    
+  }
+  .inside_three_photos, .square {
+    grid-row: 1/2;
+  }
+
+.luna_one {
+    margin-top: 5px;
+    border-radius: 10px;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left:8%;
+    height:auto;
+    width:17vw;
+    }
+.luna_two {
+    border-radius: 10px;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 5px;
+    margin-left:8%;
+    height:auto;
+    width:17vw;
+    }
+.fenya_one {
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height:auto;
+    width:100%;
+    background-color: green;
+    }
+
+.carousel_part {
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end:3;
+    height: auto;
+    position:relative;
+    overflow: hidden;
+    padding: 30px;
+    background-color: grey;
+    margin-bottom:10%;
+    }
+  
+.title_carousel {
+    padding: 0 10vw;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    color:white;
+    text-shadow: 4px 4px 4px #000000;
+
+
+    }
+    
+.service_container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto; 
+    scroll-behavior:smooth;
+    }
+    
+.service_container::-webkit-scrollbar {
+    display:none;
+    }
+.service_card {
+    flex: 0 0 auto;
+    width: 24vw;
+    height: auto;
+    margin-right: 40px;
+    }
+.service_image {
+    position:relative;
+    overflow: hidden;
+    width:100%;
+    height: 200px;
+    } 
+
+
+.service_thumb {
+    width:25vw;
+    height: 25vh;
+    object-fit: cover;
+    }
+.service_info {
+    width: 100%;
+    height: 25%;
+    padding-top: 10px;
+    }
+    
+.service_brand {
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    text-shadow: 4px 4px 4px #000000;
+    opacity:0.9;
+    }
+.service_short_description {
+    width: 100%;
+    height: auto;
+    line-height: 20px;
+    opacity:0.7;
+    margin:5px 0;
+    color:white;
+    }
+.pre_btn,
+.nxt_btn {
+    border:none;
+    width: 10vw;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEDFE4;
+    cursor: pointer;
+    z-index: 9;
+    }
+    .nxt_btn {
+        right: 0;
+    }
+    .pre_btn {
+        left:0;
+    }
+    
+    .pre_btn img,
+    .nxt_btn img {
+        opacity: 0.2;
+    }
+    
+
+
+/* AboutUs page starts here. */
+
+
+.photo_hotel {
+    grid-column-start:1;
+    grid-column-end:2;
+    display:grid;
+    grid-template-columns: 100%;
+    background-color: #DEDFE4;
+    
+}
+.photo_hotel img {
+    width: 90%;
+    margin-bottom: 20%;
+    display: block;
+    border-radius: 20px;
+    grid-column-start:1;
+    grid-column-end:2;
+    position: relative;
+    left:-730px;
+    margin-top:33%;
+    box-shadow:30px 30px 20px #989898;
+    
+
+
+}
+.about_hotel_text {
+    grid-column-start:1;
+    grid-column-end:3;
+    background: grey;
+    width:50vw;
+    height:auto;
+    position: relative;
+    margin-top:5%;
+    padding: 5px;
+    z-index:1;
+    right:-1550px;
+    margin-bottom:5%;
+    box-shadow:30px 30px 20px #989898;
+    border-radius: 10px;
+} 
+.photo_hotel, .about_hotel_text {
+    grid-row: 1/2;
+}
+.hide {
+	display: none;
+ 
+}
+.about_hotel_text h2 {
+    padding-top: 15px;
+    padding-left: 23px;
+    font-size: 30px;
+    text-transform:capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#282928;
+    margin-top:10px;
+    color:white;
+    text-shadow: 4px 4px 4px #000000;
+    opacity: 0.7;
+}
+
+.info_hotel, #hidden_text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-self:center;
+    padding: 15px;
+    height:auto;
+    font-size: 20px;
+    line-height: 1.5rem;
+    opacity:0.7;
+    color:white;
+    margin:15px;
+}
+.info_hotel {
+    border-right:4px groove white;
+    border-left:4px groove white;
+    
+}
+#hidden_text {
+    border-top:4px groove white;
+    border-bottom:4px groove white;
+}
+.about_hotel_text a {
+    margin:20px;
+    font-size:20px;
+    color:black;
+    text-decoration: none;
+
+
+    
+}
+.info_hotel p {
+    height:auto;
+}
+
+/*Staff page starts here */
+
+
+.staff_carousel {
+    width: 50vw;
+    height:70vh;
+    margin-top:10%;
+    margin-bottom:15%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start:1;
+    grid-column-end:3;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+    border-radius:10px;
+   
+ 
+
+    
+
+
+}
+.slide {
+    position:absolute;
+    inset: 0;
+    opacity: 0;
+    border: 1px solid black;
+    width: 50vw;
+    background-color: #A9A9A9;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 60% 30%;
+    border:none;
+    border-radius:10px;
+  
+   
+}
+                            
+.slide[data-active] {
+    opacity: 1;
+}
+.staff_carousel > .card_list {
+    margin: 0;
+    padding: 0;
+
+}
+.carousel-button {
+    position:absolute;
+    background:none;
+    border: none;
+    font-size:2rem;
+    top:50%;
+    z-index:2;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor:pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0,0,0.1);
+
+}
+.carousel-button:hover, 
+.carousel-button:focus {
+    color:white;
+    background-color:rgba(0,0,0, .2);
+
+}
+.carousel-button:focus {
+    outline:1px solid black;
+}
+.carousel-button.prev {
+    left: 1rem;
+}
+.carousel-button.next {
+    right: 1rem;
+}
+
+.staff_name {
+    background-color:#808080;
+    text-shadow: 4px 8px 4px #000000;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end:2;
+    opacity:0.7;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+  
+} 
+
+.quatation  {
+    color:white;
+    line-height: 1.5;
+    padding: 20px;
+    margin:5%;
+    border:2px solid #333;
+    text-transform: uppercase;
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 2;
+    grid-row-end:3;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+    border-radius:10px;
+    opacity:0.9;
+    border:none;
+
+
+} 
+.staff_short_description {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    color:white;
+    margin:2%;
+    margin-top:4%;
+    opacity:0.7;
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end:4;
+    
+}
+
+.staff_image {
+   position:absolute;
+   margin:5%;
+   margin-left:10%;
+   grid-column-start: 2;
+   grid-column-end:3;
+   grid-row-start: 2;
+   grid-row-end:3;
+
+   
+}
+.staff_thumb {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+
+}
+
+
+
+/*Calculator starts here. */
+.scores_of_weight {
+    background-color: #DEDFE4;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:2;
+    width: 80vw;
+}
+
+table {
+    border-collapse: collapse;
+    width:65vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
+th{
+
+    border: 2px solid #00292a;
+    background-color: #5C5C5C;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:white;
+    opacity:0.7;
+    text-shadow: 4px 8px 4px #000000;
+
+  }
+  td {
+    border-collapse:collapse;
+    border: 2px solid #00292a;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 25px;
+    padding: 10px;
+    opacity:0.7;
+    
+  }
+  tr{
+    border-width: medium;
+    color:#00292a;
+    border:2px solid #00292a;
+    background-color: #999999;
+  }
+  td li {
+    margin-left: 60px;
+  }
+
+  .calculator {
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-color: #999999;
+    width:55vw;
+    text-align: right;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2%;
+ 
+  }
+
+.calculator div {
+    margin-top: 40px;
+    margin-right: 30%;
+    
+
+}
+.calculator h3 {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color:#282928;
+    opacity:0.7;
+    padding:10px;
+  
+
+   
+
+}
+
+.scores_of_weight h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    font-size: 30px;
+    color:#282928;
+    opacity:0.7;
+
+}
+.scores_of_weight h3 {
+    margin-top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    font-size: 20px;
+    padding:10px;
+    color:#282928;
+    opacity:0.7;
+   
+}
+
+td:first-child { 
+    text-align: center;
+    font-size: 25px;
+}
+
+label {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color:white;
+    opacity:0.8;
+
+}
+input {
+    font-size: 20px;
+}
+
+#calculate {
+    margin-right: 20px;
+    background-color: #5C5C5C;
+    color:white;
+    opacity:0.7;
+  
+}
+#clear_form {
+    background-color: #5C5C5C;
+    color:white;
+    opacity:0.7;
+  
+
+}
+
+
+
+.messages {
+    color: red;
+}
+
+/*Contact page starts here. */
+form {
+    background-color: #DEDFE4;
+    width: 65vw;
+    margin-top: 5%;
+    margin-bottom:10%;
+    grid-column-start:1;
+    grid-column-end: 3;
+    margin-left:auto;
+    margin-right:auto;
+}
+form h2 {
+    text-align: center;
+    font-size: 40px;
+    padding:10px;
+    color:white;
+    text-shadow: 4px 8px 4px #000000;
+    opacity:0.9;
+
+   
+
+
+}
+fieldset {
+    background-color: grey;
+}
+.contactinfo h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:white;
+   
+
+   
+}
+
+
+.contactinfo div label {
+    width: 30%;
+    display:inline-block;
+    text-align:right;
+    margin-top: 20px;
+    margin-bottom:20px;
+    
+    
+  
+}
+.catinfo h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:white;
+    opacity:0.7;
+    
+}
+
+
+.catinfo div label {
+    width: 30%;
+    display:inline-block;
+    text-align:right;
+    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom:20px;
+  
+}
+
+.reserveinfo h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:white;
+    opacity:0.7;
+
+
+}
+.reserveinfo h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    opacity:0.7;
+    color:white;
+  
+
+}
+.reserveinfo div {
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.date-picker label {
+    margin-left: 10px;
+}
+
+.additionalinfo h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:white;
+    opacity:0.7;
+
+}
+
+
+span {
+    color:#790001;
+    
+}
+.date-picker {
+    width: 55%;
+    text-align: right;
+
+}
+textarea {
+    width: 90%;
+}
+.additionalinfo div{
+   text-align: center;
+    margin-bottom: 20px;
+}
+.contactinfo div input, .catinfo div input {
+    margin-left:10px;
+}
+
+.additionalinfo div label {
+    float:left;
+    margin-left:5%;
+}
+fieldset {
+    margin-top:2%;
+}
+#btnSubmit {
+    color: white;
+    background-color: #262626;
+    opacity:0.7;
+    width:10vw;
+    height:4vh;
+    border-radius: 10px;
+}
+#clear {
+    width:10vw;
+    height:4vh;
+    border-radius: 10px;
+    color: white;
+    background-color: #262626;
+    opacity:0.7;
+}
+textarea {
+    margin-top: 2%;
+}
+/* Responsive Hamburger-navigation starts here */
+
+
+@media all and (max-width: 1146px) {
+.navbar {
+    grid-template-columns: 40% 40% 20%;
+    }
+    
+    
+.nav_links {
+    display:block;
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end:3;
+    list-style: none;
+    margin-left: 30px;
+    text-align: center;
+    } 
+.nav_links li {
+    display: block;
+    padding: 20px;
+    }
+*,
+*::after,
+*::before {
+    box-sizing:border-box;
+
+}
+:root {
+    --bar-width: 35px;
+    --bar-height: 5px;
+    --hamburger-gap: 6px;
+    --hamburger-margin: 8px;
+    --foreground:white;
+    --background: white;
+    --animation-timing:200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height)*3 + var(--hamburger-gap)*2);
+}
+
+.hamburger_menu {
+    --x-width:calc(var(--hamburger-height)*1.41421356237);
+    display: flex;
+    flex-direction: column;
+    gap:var(--hamburger-gap);
+    width:max-content;
+    margin-top:40px;
+    cursor: pointer;
+    grid-column-start:3;
+    grid-column-end: 4;
+}
+
+
+.hamburger_menu::before,
+.hamburger_menu::after,
+.hamburger_menu input {
+content:"";
+width: var(--bar-width);
+height: var(--bar-height);
+background-color: var(--foreground);
+border-radius: 9999px;
+transform-origin: left center;
+transition:opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing),
+ background-color var(--animation-timing);
+}
+
+.hamburger_menu input {
+    appearance: none;
+    margin:0;
+    padding:0;
+    outline: none;
+    pointer-events: none;
+
+}
+.hamburger_menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height)/-2);
+}
+.hamburger_menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height)/2);
+}
+.hamburger_menu input:checked{
+    opacity:0;
+    width:0;
+
+}
+
+nav {
+    grid-column-start:1;
+    grid-column-end: 4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 0;
+    font-size: 0;
+    overflow:hidden;
+    transition: .5s all;
+    background-color:grey;
+    
+
+
+}
+
+.hamburger_menu:has(input:checked) + nav {
+    height: 350px;
+
+}
+
+.hamburger_menu:has(input:checked) + nav a {
+    font-size: 15px;
+}
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive website for 2560 screen device */
+
+@media all and (min-width: 2560px) {
+    .logo_cat {
+        width:13vw;
+        height:auto;
+        padding:0;
+        margin:2%;
+      }
+    
+      .nav_links {
+        height:auto;
+        width: 80vw;
+        margin-top:2.5%;
+    
+      }
+      .nav_links a {
+        font-size: 40px;
+        margin-left: 60px;
+      }
+  
+    .navbar {
+        height: 200px;
+        grid-template-columns:15% 85%;
+      }
+    .big_text {
+        font-size: 80px;
+        margin-bottom: 20%;
+    }
+    .inside_welcome h2 {
+        font-size: 60px;
+    }
+    .inside_welcome {
+        margin-top:15%;
+    }
+    .inside_three_photos {
+        margin-top: 23%;
+        height:50vh;
+    }
+    .square {
+        height: 75vh;
+      }
+       
+    .text p {
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .luna_one, .luna_two {
+        margin-top:3%;
+        width:20vw;
+        margin-left:20%;
+    }
+
+    .fenya_one{
+        margin-left:5%;
+        width:25vw;
+    }
+    .pre_btn img,
+    .nxt_btn img {
+ 
+    width: 3vw;
+    height:auto;
+    }
+
+    .service_info {
+        width: 100%;
+        height: 350px;
+        margin-top:20px;
+       
+    }
+    
+    .service_brand {
+        font-size: 35px;
+    }
+    .carousel_part {
+        padding: 30px;
+    }
+    .carousel_part h2 {
+        font-size: 60px;
+    }
+   
+    .service_card {
+        width: 600px;
+        margin-right: 90px;
+    }
+    
+    .service_image {
+        width:100%;
+        height: 400px;
+    }
+  
+    .service_short_description {
+        font-size: 39px;
+        width: 100%;
+        line-height: 1.3; 
+        }
+    
+    
+    .info_hotel p {
+        font-size:45px;
+        line-height: 1.5;
+        height:auto;
+    }
+    .info_hotel {
+        margin-top:3%;
+    }
+    #hidden_text{
+        font-size:45px;
+        line-height: 1.5;
+    }
+    .about_hotel_text h2 {
+        font-size: 60px;
+        padding:25px;
+    }
+    .about_hotel_text a {
+        font-size:45px;
+    }
+    #for_anchor1, #for_anchor2 {
+        margin-top: 3%;
+    }
+ 
+    .staff_short_description {
+        font-size: 45px;
+    }
+    .carousel-button {
+        font-size:4rem;
+        padding: 0 .7rem;
+    
+    }
+    .quatation {
+        font-size: 45px;
+        height:15vh;
+    }
+
+    .staff_name {
+        font-size: 60px;
+    }
+    .slide, .staff_carousel {
+        width: 70vw;
+    }
+    .staff_image {
+        width:85%;
+      
+    }
+    .staff_carousel {
+        margin-bottom:33%;
+    }
+
+    td {
+        font-size: 38px;
+        line-height:1.3;
+    }
+    td:first-child { 
+        font-size: 38px;
+    }
+    th {
+        font-size:40px;
+    }
+    .scores_of_weight h2 {
+        font-size:40px;
+    }
+    .scores_of_weight h3, .calculator h3 {
+        font-size:39px;
+    }
+    .scores_of_weight {
+        margin-top:10%;
+    }
+    label {
+        font-size: 38px;
+    
+    }
+    input {
+        font-size: 37px;
+    }
+    #calculate, #clear_form {
+      margin:5%;
+      padding:10px;
+      border-radius: 10px;
+      
+    }
+    .messages {
+        font-size:38px;
+        list-style: none;
+        margin-right:3%;
+    }
+    .contactinfo h2 {
+        font-size: 65px;
+    }
+
+    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+        font-size:45px;
+        margin-top:30px;
+    }
+    input[type="radio"] {
+       height:30px;
+       width:30px;
+    }
+    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+        font-size:50px;
+    }
+    .reserveinfo h4 {
+        font-size:48px;
+    }
+    fieldset span{
+        font-size:45px;
+    }
+   
+    footer {
+        font-size:35px;
+    }
+    
+      
+}
+/*Responsive website for 2000 screen device.*/
+@media all and (max-width:2559px) and (min-width:2000px) {
+    .logo_cat {
+        width:13vw;
+        height:auto;
+        padding:0;
+        margin:2%;
+      }
+    
+      .nav_links {
+        height:auto;
+        width: 80vw;
+        margin-top:2.3%;
+    
+      }
+      .nav_links a {
+        font-size: 30px;
+        margin-left: 40px;
+      }
+  
+    .navbar {
+        height: 160px;
+        grid-template-columns:15% 85%;
+      }
+
+    .inside_welcome h2 {
+        font-size: 50px;
+    }
+    .inside_welcome {
+        margin-bottom:5%;
+        margin-top:5%;
+    }
+    .text p {
+        font-size: 36px;
+    }
+    .luna_one, .luna_two {
+        margin-top:3%;
+        width:18vw;
+        margin-left:20%;
+    }
+    .inside_three_photos {
+        margin-top: 15%;
+        margin-bottom: 10%;
+        height:47vh;
+    }
+
+    .fenya_one{
+        margin-left:5%;
+        width:22vw;
+    }
+    .square {
+        height: 80vh;
+      }
+
+    .service_info {
+        width: 100%;
+        margin-top:20px;
+       
+    }
+    
+    .service_brand {
+        font-size: 35px;
+    }
+    .carousel_part {
+        height:auto;
+    
+    }
+    .carousel_part h2 {
+        font-size: 45px;
+    }
+   
+    .service_card {
+        width: 30vw;
+        height: auto;
+        margin-right: 50px;
+    }
+    
+    .service_image {
+        width:30vw;
+        height: 400px;
+    }
+    .service_image img {
+        width:100%;
+        height:100%;
+    }
+    .service_short_description {
+        font-size: 33px;
+        width: 100%;
+        line-height: 1.3;
+        height:auto;
+        }
+    .big_text {
+        font-size:70px;
+    }
+    .info_hotel p {
+        font-size:33px;
+        line-height: 1.5;
+        height:auto;
+    }
+    #hidden_text{
+        font-size:33px;
+        line-height: 1.5;
+    }
+    .about_hotel_text h2 {
+        font-size: 40px;
+        padding:25px;
+        margin-top: 2%;
+    }
+    .about_hotel_text a {
+        margin:20px;
+        font-size:35px;
+        margin-top:3%;
+        margin-bottom:3%;
+    }
+    .about_hotel_text {
+        margin-top:10%;
+        margin-bottom:25%;
+    }
+    .photo_hotel img {
+        margin-top:40%;
+    }
+
+    .slide, .staff_carousel {
+        width: 70vw;
+    }
+    .staff_carousel {
+        margin-top: 10%;
+        margin-bottom: 40%;
+    }
+    .staff_short_description {
+        font-size: 38px;
+        margin:1%;
+    }
+    .carousel-button {
+        font-size:4rem;
+        padding: 0 .7rem;
+    
+    }
+  
+    .quatation {
+        font-size: 40px;
+        height:13vh;
+    }
+
+    .staff_name {
+        font-size: 50px;
+    }
+    .staff_image {
+        width:75%;
+    }
+
+    td {
+        font-size: 35px;
+        line-height:1.3;
+    }
+    td:first-child { 
+        font-size: 35px;
+    }
+    th {
+        font-size:38px;
+    }
+    .scores_of_weight h2 {
+        font-size:38px;
+    }
+    .scores_of_weight {
+        margin-top:10%;
+    }
+  
+    .scores_of_weight h3, .calculator h3 {
+        font-size:36px;
+    }
+    label {
+        font-size: 35px;
+    
+    }
+    input {
+        font-size: 35px;
+    }
+    #calculate, #clear_form {
+      margin:5%;
+      padding:10px;
+      border-radius: 10px;
+      
+    }
+    .messages {
+        font-size:38px;
+        margin-right:3%;
+        list-style: none;
+    }
+    table {
+        margin-top:0;
+    }
+    .contactinfo h2 {
+        font-size: 50px;
+    }
+    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+        font-size:35px;
+    }
+    input[type="radio"] {
+       height:30px;
+       width:30px;
+    }
+    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+        font-size:38px;
+    }
+    .reserveinfo h4 {
+        font-size:36px;
+    }
+    fieldset span{
+        font-size:35px;
+    }
+    form {
+        margin-top:10%;
+        margin-bottom:20%;
+    }
+
+    footer {
+        font-size:25px;
+    }
+    
+
+}
+
+
+
+
+
+/*Responsive website for 1532 screen device.*/
+@media all and (max-width: 1999px) and (min-width: 1532px)  {
+    .logo_cat {
+        width:12vw;
+        height:auto;
+        padding:0;
+        margin-top:10%;
+      }
+    
+      .nav_links {
+        height:auto;
+        width: 75vw;
+        margin-top:2.3%;
+    
+      }
+      .nav_links a {
+        font-size: 28px;
+        margin-left: 30px;
+      }
+  
+    .navbar {
+        height: 150px;
+        grid-template-columns:15% 85%;
+      }
+
+
+    .inside_three_photos {
+        height: 55vh;
+        margin-top:30%;
+        margin-bottom:10%;
+    }
+    .inside_welcome {
+        margin-bottom:10%;
+    }
+ 
+    .luna_one, .luna_two {
+        margin-top: 5%;
+        width:20vw;
+        margin-left:18%;
+    }
+    .fenya_one {
+        width: 24vw;
+        margin-top:17%;
+    }
+    
+ 
+    .text {
+        font-size: 30px;
+    }
+    .big_text {
+        font-size: 60px;
+    }
+
+    .service_info {
+        width: 100%;
+        margin-top:20px;
+       
+    }
+    
+    .service_brand {
+        font-size: 25px;
+    }
+  
+    .carousel_part h2 {
+        font-size: 35px;
+    }
+
+   
+    .service_card {
+        width: 30vw;
+        margin-right: 40px;
+    }
+    
+    .service_image {
+        width:100%;
+        height: 300px;
+    }
+    .service_image img {
+        width:100%;
+        height:100%;
+        }
+    .service_short_description {
+        font-size: 25px;
+        width: 100%;
+        height:auto;
+        line-height: 1.3;
+    }
+    .info_hotel p {
+        font-size:28px;
+        line-height: 1.3;
+        height:auto;
+    }
+
+    #hidden_text{
+        font-size:28px;
+        line-height: 1.3;
+    }
+    .about_hotel_text h2 {
+        font-size: 33px;
+        padding:10px;
+
+    }
+    .about_hotel_text a {
+        margin:25px;
+        font-size:28px;
+        margin-top:3%;
+        margin-bottom:3%;
+    }
+    .about_hotel_text {
+        margin-bottom:40%;
+        margin-top:10%;
+    }
+    .photo_hotel img {
+        margin-top:30%;
+    }
+
+    .staff_short_description { 
+        font-size: 28px;
+        margin:1%;
+    }
+   
+    .carousel-button {
+        font-size:3rem;
+        padding: 0 .7rem;
+    
+    }
+  
+    .quatation {
+        font-size: 30px;
+        height:13vh;
+    }
+
+    .staff_name {
+        font-size: 38px;
+    }
+    .staff_carousel, .slide {
+        width:70vw;
+    }
+    .staff_carousel {
+        margin-bottom:40%;
+    }
+    .staff_image {
+        width: 75%;
+    }
+
+    td {
+        font-size: 28px;
+        line-height:1.3;
+    }
+    td:first-child { 
+        font-size: 28px;
+    }
+    th {
+        font-size:30px;
+    }
+    .scores_of_weight h2 {
+        font-size:30px;
+    }
+    .scores_of_weight {
+        margin-top:10%;
+    }
+    .scores_of_weight h3, .calculator h3 {
+        font-size:29px;
+    }
+    label {
+        font-size: 28px;
+    
+    }
+    input {
+        font-size: 28px;
+    }
+    #calculate, #clear_form {
+      margin:3%;
+      padding:10px;
+      border-radius: 10px;
+      
+    }
+    .messages {
+        font-size:28px;
+        margin-right:3%;
+        list-style: none;
+    }
+    table {
+        margin-top:0;
+    }
+    .contactinfo h2 {
+        font-size: 37px;
+    }
+  
+    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+        font-size:28px;
+    }
+
+    .contactinfo div input, .catinfo div input {
+        margin-left:10px;
+    }
+    input[type="radio"] {
+       height:28px;
+       width:28px;
+    }
+    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+        font-size:30px;
+    }
+    .reserveinfo h4 {
+        font-size:29px;
+    }
+    fieldset span{
+        font-size:28px;
+    }
+   
+    footer {
+        font-size:20px;
+    }
+    
+
+}
+
+/*Responsive website for 1531 screen device.*/
+@media all and (max-width: 1531px) and (min-width: 1441px)  {
+    .logo_cat {
+        width:11vw;
+        height:auto;
+        padding:0;
+        margin-top:10%;
+      }
+      
+      .nav_links {
+        height:auto;
+        width: 75vw;
+        margin-top:1.5%;
+    
+      }
+      .nav_links a {
+        font-size: 22px;
+        margin-left: 30px;
+      }
+  
+    .navbar {
+        height: 110px;
+        grid-template-columns:15% 85%;
+      }
+    .big_text {
+        font-size: 50px;
+    }
+    .inside_welcome h2 {
+        font-size: 35px;
+    }
+    .text p {
+        font-size: 22px;
+    }
+    .inside_welcome {
+        margin-top:80px;
+    }
+    .inside_three_photos {
+        height:50vh;
+        margin-bottom:300px;
+        margin-top:100px;
+        overflow: hidden;
+    }
+    .luna_one, .luna_two {
+        width:60%;
+        margin:5px;
+        margin-left:15%;
+        height:auto;
+    }
+    .fenya_one{
+        margin-top:25px;
+        width:100%;
+        height:auto;
+        }
+    .square{
+        height:800px;
+    }
+    .service_short_description {
+        font-size: 20px;
+        line-height: 1.3;
+        }
+
+    .service_image img {
+        width:100%;
+        height:100%;
+        }
+        .info_hotel p {
+            font-size:20px;
+            line-height: 1.3;
+        }
+        .info_hotel {
+            margin-top:20px;
+        }
+    
+        #hidden_text{
+            font-size:20px;
+            line-height: 1.3;
+        }
+        .about_hotel_text h2 {
+            font-size: 22px;
+            padding:10px;
+            margin-top: 1%;
+        }
+        .about_hotel_text a {
+            margin:20px;
+            font-size:22px;
+            margin-top:3%;
+            margin-bottom:3%;
+        }
+        .about_hotel_text {
+            margin-bottom:35%;
+            margin-top:13%;
+        }
+        .photo_hotel img {
+            margin-top:35%;
+        }
+        .staff_short_description {
+            font-size: 25px;
+            margin:1%;
+        }
+        .carousel-button {
+            font-size:2.5rem;
+            padding: 0 .6rem;
+        }
+    
+        .quatation {
+            font-size: 25px;
+            height:12vh;
+        }
+        .staff_image {
+            width: 70%;
+        }
+    
+        .staff_name {
+            font-size: 28px;
+        }
+
+        .staff_carousel, .slide {
+            width:70vw;
+        }
+        .staff_carousel {
+            margin-bottom:35%;
+        }
+        td {
+            font-size: 24px;
+            line-height:1.3;
+        }
+        td:first-child { 
+            font-size: 24px;
+        }
+        th {
+            font-size:27px;
+        }
+        .scores_of_weight h2 {
+            font-size:26px;
+        }
+        .scores_of_weight h3, .calculator h3 {
+            font-size:25px;
+        }
+        .scores_of_weight {
+            margin-top:10%;
+        }
+        label {
+            font-size: 24px;
+        
+        }
+        input {
+            font-size: 24px;
+        }
+        #calculate, #clear_form {
+          margin:3%;
+          padding:6px;
+          border-radius: 10px;
+          font-size: 24px;
+          
+        }
+        .messages {
+            font-size:24px;
+            margin-right:3%;
+            list-style: none;
+        }
+        table {
+            margin-top:0;
+        }
+        .contactinfo h2 {
+            font-size: 35px;
+        }
+      
+        .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+            font-size:25px;
+        }
+        input[type="radio"] {
+           height:25px;
+           width:25px;
+        }
+        .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+            font-size:28px;
+        }
+        .reserveinfo h4 {
+            font-size:26px;
+        }
+        fieldset span{
+            font-size:25px;
+        }
+        
+    footer {
+        font-size:20px;
+        }
+
+
+}
+
+
+/*Responsive website for 1440 screen device.*/
+
+@media all and (max-width:1440px) and (min-width: 1386px) {
+
+    .logo_cat {
+        width:11vw;
+        height:auto;
+        padding:0;
+        margin-top:10%;
+      }
+    
+      .nav_links {
+        height:auto;
+        width: 75vw;
+        margin-top:1.5%;
+    
+      }
+      .nav_links a {
+        font-size: 22px;
+        margin-left: 30px;
+      }
+  
+    .navbar {
+        height: 100px;
+        grid-template-columns:15% 85%;
+      }
+
+    .big_text {
+        font-size: 50px;
+    }
+    .inside_welcome h2 {
+        font-size: 28px;
+    }
+    .inside_welcome {
+        margin-top: 110px;
+    }
+    .inside_three_photos {
+        height:35vh;
+        margin-bottom:300px;
+        margin-top:100px;
+        overflow: hidden;
+    
+    }
+
+    .luna_one, .luna_two {
+        margin-left:15%;
+        width:80%;
+        margin-top:10px;
+        height:auto;
+    }
+    .fenya_one{
+        margin-top:85px;
+        width:25vw;
+        height:auto;
+        }
+    .square{
+        height:800px;
+    }
+  
+    .text p {
+        font-size: 22px;
+        }
+       
+
+    .service_image {
+        width:100%;
+        height: 240px;
+    }
+    .service_image img {
+        width:100%;
+        height:100%;
+    }
+    .service_info {
+        width: 100%;
+        margin-top:20px;
+       
+    }
+    .service_brand {
+        font-size: 20px;
+    }
+
+    .carousel_part h2 {
+        font-size: 25px;
+    }
+   
+    .service_card {
+        width: 24vw;
+        margin-right: 40px;
+      
+    }
+    
+    .service_short_description {
+        font-size: 17px;
+        width: 100%;
+        line-height: 1.3;
+        }
+        .info_hotel p {
+            font-size:20px;
+            line-height: 1.3;
+        }
+        .info_hotel {
+            margin-top:15px;
+        }
+    
+        #hidden_text{
+            font-size:20px;
+            line-height: 1.3;
+        }
+        .about_hotel_text h2 {
+            font-size: 22px;
+            padding:10px;
+            margin-top: 1%;
+        }
+        .about_hotel_text a {
+            margin:10px;
+            font-size:22px;
+            margin-top:3%;
+            margin-bottom:3%;
+        }
+        .about_hotel_text {
+            margin-bottom:30%;
+            margin-top:10%;
+        }
+        .photo_hotel img {
+            margin-top:30%;
+        }
+        .staff_short_description {
+            font-size: 23px;
+            margin:1%;
+        }
+        .carousel-button {
+            font-size:2.2rem;
+            padding: 0 .6rem;
+        
+        }
+      
+        .quatation {
+            font-size: 25px;
+            height:12vh;
+        }
+        .staff_image {
+            width:65%;
+        }
+        .staff_name {
+            font-size: 26px;
+        }
+        .staff_carousel, .slide {
+            width:70vw;
+        }
+        .staff_carousel {
+            margin-bottom: 40%;
+        }
+        td {
+            font-size: 22px;
+            line-height:1.3;
+        }
+        td:first-child { 
+            font-size: 22px;
+        }
+        th {
+            font-size:23px;
+        }
+        .scores_of_weight h2 {
+            font-size:25px;
+        }
+        .scores_of_weight h3, .calculator h3 {
+            font-size:24px;
+        }
+        .scores_of_weight {
+            margin-top:10%;
+        }
+        label {
+            font-size: 22px;
+        
+        }
+        input {
+            font-size: 22px;
+        }
+        #calculate, #clear_form {
+          margin:3%;
+          padding:6px;
+          border-radius: 10px;
+          font-size: 22px;
+          
+        }
+        .messages {
+            font-size:22px;
+            margin-right:3%;
+            list-style: none;
+        }
+        table {
+            margin-top:0;
+        }
+        .contactinfo h2 {
+            font-size: 30px;
+        }
+      
+        .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+            font-size:22px;
+        }
+        input[type="radio"] {
+           height:22px;
+           width:22px;
+        }
+        .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+            font-size:25px;
+        }
+        .reserveinfo h4 {
+            font-size:23px;
+        }
+        fieldset span{
+            font-size:22px;
+        }
+      
+        footer {
+            font-size:20px;
+        }
+    
+    }
+
+
+    /* Responsive website for 1385 screen device */
+
+@media all and (max-width:1385px) and (min-width: 1255px) {
+    .logo_cat {
+        width:13vw;
+        height:5vw;
+        padding:0;
+        margin-top:10%;
+      }
+      .logo {
+        height:90px;
+      }
+    
+      .nav_links {
+        height:auto;
+        width: 75vw;
+        margin-top:1.5%;
+    
+      }
+      .nav_links a {
+        font-size: 20px;
+        margin-left: 25px;
+      }
+  
+    .navbar {
+        height: 90px;
+        grid-template-columns:15% 85%;
+      }
+    .big_text {
+        font-size: 45px;
+    }
+  
+    .luna_one, .luna_two {
+        display:none;
+    }
+    .fenya_one {
+        width: 100%;
+        height:auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end:3;
+        margin:0;
+        margin-top:20px;
+    }
+    .inside_three_photos {
+        height:35vh;
+        margin-bottom:300px;
+        margin-top:100px;
+        overflow: hidden;
+    
+    }
+    .inside_welcome {
+        margin-top: 120px;
+        width:60vw;
+      
+    }
+    .inside_welcome h2{
+        font-size:30px;
+    }
+    .text p {
+        font-size: 23px;
+        }
+    .main {
+        grid-template-columns: 70% 30%;
+    }
+
+    .service_image {
+        width:100%;
+        height: 195px;
+    }
+    .service_image img {
+        width:100%;
+        height:100%;
+       }
+ 
+    .service_brand {
+        font-size: 20px;
+    }
+
+    .carousel_part h2 {
+        font-size: 25px;
+    }
+   
+    .service_card {
+        width: 24vw;
+        margin-right: 30px;
+        background-color:blue;
+      
+    }
+    .service_short_description {
+        font-size: 19px;
+        width: 100%;
+        line-height: 1.3;
+        }
+        .info_hotel p {
+            font-size:23px;
+            line-height: 1.3;
+        }
+        .info_hotel {
+            margin-top:15px;
+        }
+    
+        #hidden_text{
+            font-size:23px;
+            line-height: 1.3;
+        }
+        .about_hotel_text h2 {
+            font-size: 22px;
+            padding:10px;
+            margin-top: 2%;
+        }
+        .about_hotel_text a {
+            margin:10px;
+            font-size:22px;
+            margin-top:3%;
+            margin-bottom:3%;
+        }
+        .about_hotel_text {
+            margin-top:10%;
+            margin-bottom:25%;
+        }
+     
+        .photo_hotel img {
+            margin-top:30%;
+            width:80%;
+        }
+        .staff_short_description {
+            font-size: 23px;
+            padding:10px;
+        }
+        .carousel-button {
+            font-size:2.2rem;
+            padding: 0 .6rem;
+        }
+      
+        .quatation {
+            font-size: 23px;
+            height:12vh;
+        }
+        .staff_image {
+            width:70%;
+        }
+    
+        .staff_name {
+            font-size: 25px;
+        }
+        .staff_carousel, .slide {
+            width:70vw;
+            height: 70vh;
+        }
+        .staff_carousel {
+            margin-bottom: 40%;
+        }
+        td {
+            font-size: 19px;
+            line-height:1.3;
+        }
+        td:first-child { 
+            font-size: 19px;
+        }
+        th {
+            font-size:20px;
+        }
+        .scores_of_weight h2 {
+            font-size:22px;
+        }
+        .scores_of_weight h3, .calculator h3 {
+            font-size:21px;
+        }
+        .scores_of_weight {
+            margin-top:10%;
+        }
+        label {
+            font-size: 19px;
+        
+        }
+        input {
+            font-size: 19px;
+        }
+        #calculate, #clear_form {
+          margin:3%;
+          padding:6px;
+          border-radius: 10px;
+          font-size: 19px;
+          
+        }
+        .messages {
+            font-size:19px;
+            margin-right:3%;
+            list-style: none;
+        }
+        table {
+            margin-top:0;
+        }
+        .contactinfo h2 {
+            font-size: 30px;
+        }
+      
+        .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+            font-size:22px;
+        }
+        input[type="radio"] {
+           height:22px;
+           width:22px;
+        }
+        .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+            font-size:25px;
+        }
+        .reserveinfo h4 {
+            font-size:23px;
+        }
+        fieldset span{
+            font-size:22px;
+        }
+        footer {
+            font-size:18px;
+        }
+    
+   
+}
+
+/*Responsive website for 1254 screen device. */
+@media all and (max-width: 1254px) and (min-width: 1147px) {
+    .logo_cat {
+        width:13vw;
+        height:auto;
+        padding:0;
+        margin-top:8%;
+      }
+      .logo {
+        height:80px;
+      }
+    
+      .nav_links {
+        height:auto;
+        width: 75vw;
+        margin-top:1%;
+    
+      }
+      .nav_links a {
+        font-size: 18px;
+        margin-left: 20px;
+      }
+  
+    .navbar {
+        height: 80px;
+        grid-template-columns:15% 85%;
+      }
+  
+    .main {
+        grid-template-columns: 70% 30%;
+    }
+    .luna_one, .luna_two {
+        display:none;
+    }
+    .fenya_one {
+        width: 100%;
+        height:auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end:3;
+        margin:0;
+        margin-top:20px; 
+    }
+    .inside_three_photos {
+        margin-bottom:300px;
+        margin-top:100px;
+        overflow:hidden;
+        height:32vh;
+        background-color:blue;
+    }
+ 
+    .inside_welcome {
+        margin-top: 125px;
+        width:60vw;
+    }
+    .inside_welcome h2{
+        font-size:30px;
+    }
+    .text p {
+        font-size: 23px;
+        }
+
+    .big_text {
+        font-size: 40px;
+    }
+    .text p {
+        font-size: 19px;
+        }
+    
+    .service_brand {
+        font-size: 20px;
+    }
+
+    .carousel_part h2 {
+        font-size: 30px;
+    }
+    .carousel_part {
+        padding:20px;
+    }
+   
+    .service_card {
+        width: 25vw;
+        margin-right: 20px;
+        
+    }
+   .service_image img {
+    width:100%;
+    height:100%;
+   }
+    .service_image {
+        width:100%;
+        height: 195px;
+    }
+    .service_short_description {
+        font-size: 18px;
+        width: 100%;
+        line-height: 1.3;
+        }
+        .info_hotel p {
+            font-size:18px;
+            line-height: 1.3;
+        }
+        .info_hotel {
+            margin-top:15px;
+        }
+    
+        #hidden_text{
+            font-size:18px;
+            line-height: 1.3;
+        }
+        .about_hotel_text h2 {
+            font-size: 20px;
+            padding:10px;
+            margin-top: 1%;
+        }
+        .about_hotel_text a {
+            margin:10px;
+            font-size:20px;
+            margin-top:3%;
+            margin-bottom:3%;
+        }
+        .about_hotel_text {
+            margin-top:10%;
+            margin-bottom:25%;
+        }
+        #for_anchor1, #for_anchor2 {
+            margin-top: 4%;
+        }
+        .photo_hotel img {
+            margin-top:27%;
+            width:65%;
+        }
+        .staff_short_description {
+            font-size: 18px;
+            margin:2%;
+        }
+      
+        .quatation {
+            font-size: 20px;
+            height:11vh;
+        }
+        .staff_image {
+            width:75%;
+        }
+    
+        .staff_name {
+            font-size: 23px;
+        }
+        .staff_carousel, .slide {
+            width:70vw;
+            height: 70vh;
+        }
+        .staff_carousel {
+            margin-bottom: 45%;
+        }
+        .carousel-button {
+            font-size:2.2rem;
+            padding: 0 .6rem;
+        }
+        td {
+            font-size: 18px;
+            line-height:1.3;
+        }
+        td:first-child { 
+            font-size: 18px;
+        }
+        th {
+            font-size:19px;
+        }
+        .scores_of_weight h2 {
+            font-size:20px;
+        }
+        .scores_of_weight h3, .calculator h3 {
+            font-size:19px;
+        }
+        .scores_of_weight {
+            margin-top:10%;
+        }
+        label {
+            font-size: 18px;
+        
+        }
+        input {
+            font-size: 18px;
+        }
+        #calculate, #clear_form {
+          margin:1%;
+          padding:4px;
+          border-radius: 10px;
+          font-size: 18px;
+          
+        }
+        .messages {
+            font-size:18px;
+            margin-right:3%;
+            list-style: none;
+        }
+        table {
+            margin-top:0;
+        }
+        .contactinfo h2 {
+            font-size: 25px;
+        }
+      
+        .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+            font-size:18px;
+        }
+        input[type="radio"] {
+           height:18px;
+           width:18px;
+        }
+        .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+            font-size:20px;
+        }
+        .reserveinfo h4 {
+            font-size:19px;
+        }
+        fieldset span{
+            font-size:18px;
+        }
+        footer {
+            font-size:13px;
+        }
+
+}
+
+
+/*Responsive website for 1146 screen device. */
+@media all and (max-width: 1146px) and (min-width:995px) {
+
+    .big_text {
+        font-size: 40px;
+    }
+    .nav_links {
+        height:auto;
+        width: 70vw;
+        margin-top:13px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+  
+    .navbar {
+        height: 72px;
+    }
+    nav {
+        margin-top:-14px;
+     
+        
+    }
+    .logo_cat {
+        width:12vw;
+        height:auto;
+        padding:0;
+        margin-top:0;
+      }
+      .logo {
+        height:72px;
+      }
+    .hamburger_menu {
+        margin-top:23px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .luna_one, .luna_two {
+        display:none;
+    }
+ 
+    .fenya_one {
+        width: 100%;
+        height:auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end:3;
+        margin:0;
+        margin-top:20px; 
+    }
+    .inside_three_photos {
+      height:30vh;
+      margin-top:100px;
+      margin-bottom:300px;
+      background-color: yellow;
+    }
+    .inside_welcome h2{
+        font-size:25px;
+    }
+    .inside_welcome {
+        width:60vw;
+        margin-top:130px;
+    }
+    .text p {
+        font-size:18px;
+    }
+    .main {
+        grid-template-columns: 70% 30%;
+    }
+
+
+    .service_short_description {
+        font-size: 17px;
+        width:100%;
+        line-height: 1.3;
+        }
+    .carousel_part h2 {
+        font-size: 23px;
+        }
+    .carousel_part {
+        padding:20px;
+    }
+    .service_brand {
+        font-size: 17px;
+        }
+     .service_image img {
+        width:100%;
+        height:100%;
+        }
+    .service_image {
+        width:100%;
+        height: 200px;
+        }
+    .service_card {
+        width: 25vw;
+        margin-right: 48px;
+       
+    }
+    .info_hotel p {
+        font-size:17px;
+        line-height: 1.3;
+    }
+    .info_hotel {
+        margin-top:15px;
+    }
+
+    #hidden_text{
+        font-size:18px;
+        line-height: 1.3;
+    }
+    .about_hotel_text h2 {
+        font-size: 20px;
+        padding:10px;
+        margin-top: 1%;
+    }
+    .about_hotel_text {
+        margin-top:10%;
+        margin-bottom:25%;
+    }
+    .about_hotel_text a {
+        margin:10px;
+        font-size:19px;
+        margin-top:3%;
+        margin-bottom:3%;
+    }
+    .photo_hotel img {
+        margin-top:30%;
+        width:65%;
+    }
+    .staff_short_description {
+        font-size: 17px;
+    }
+    .carousel-button {
+        font-size:2.2rem;
+        padding: 0 .6rem;
+    }
+  
+    .quatation {
+        font-size: 17px;
+        height:13vh;
+        padding:10px;
+    }
+    .staff_image {
+       width:80%;
+    }
+
+    .staff_name {
+        font-size: 20px;
+    }
+    .staff_carousel, .slide {
+        width:70vw;
+        height: 70vh;
+    }
+    td {
+        font-size: 17px;
+        line-height:1.3;
+    }
+    td:first-child { 
+        font-size: 17px;
+    }
+    th {
+        font-size:18px;
+    }
+    .scores_of_weight h2 {
+        font-size:19px;
+    }
+    .scores_of_weight h3, .calculator h3 {
+        font-size:18px;
+    }
+    .scores_of_weight {
+        margin-top:10%;
+    }
+    label {
+        font-size: 17px;
+    
+    }
+    input {
+        font-size: 17px;
+    }
+    #calculate, #clear_form {
+      margin:1%;
+      padding:4px;
+      border-radius: 10px;
+      font-size: 16px;
+      
+    }
+    
+    .messages {
+        font-size:17px;
+        margin-right:3%;
+        list-style: none;
+    }
+    table {
+        margin-top:0;
+    }
+    .contactinfo h2 {
+        font-size: 24px;
+    }
+  
+    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+        font-size:17px;
+    }
+    .date-picker {
+        width:70%;
+    }
+    input[type="radio"] {
+       height:17px;
+       width:17px;
+    }
+    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+        font-size:19px;
+    }
+    .reserveinfo h4 {
+        font-size:18px;
+    }
+    fieldset span{
+        font-size:17px;
+    }
+    #btnSubmit, #clear {
+        width:8vw;
+        font-size:17px;
+    }
+    footer {
+        font-size:12px;
+    }
+}
+
+
+
+/* Responsive website for 994 screen device */
+@media all and (max-width:994px) and (min-width:889px) {
+    .logo_cat {
+        width:13vw;
+        height:auto;
+        padding:0;
+        margin-top:1%;
+      }
+      .logo {
+        height:72px;
+      }
+    .big_text {
+        font-size: 35px;
+    }
+    .nav_links {
+        height:auto;
+        width: 70vw;
+        margin-top:13px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .nav_links a {
+        font-size: 17px;
+    }
+    .navbar {
+        height: 72px;
+    }
+    nav {
+        margin-top:-14px;
+    }
+    .hamburger_menu {
+        margin-top:23px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .main {
+        grid-template-columns: 70% 30%;
+    }
+    .luna_one, .luna_two {
+        display:none;
+    }
+    .inside_welcome {
+        width:58vw;
+        margin-top:98px;
+    }
+    .inside_welcome h2{
+        font-size:24px;
+    }
+    .text p {
+        font-size:17px;
+    }
+
+    .fenya_one {
+        width: 100%;
+        height:auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end:3;
+        margin:0;
+        margin-top:20px; 
+    }
+    .inside_three_photos {
+      height:26vh;
+      margin-top:100px;
+      margin-bottom:300px;
+      background-color: purple;
+    }
+
+    .service_short_description {
+        font-size: 15px;
+        width:100%;
+        line-height: 1.3;
+        }
+    .carousel_part h2 {
+        font-size: 23px;
+        }
+    .carousel_part {
+        padding:20px;
+    }
+    .service_brand {
+        font-size: 17px;
+        }
+     .service_image img {
+        width:100%;
+        height:100%;
+        }
+    .service_image {
+        width:100%;
+        height: 200px;
+        }
+    .service_card {
+        width: 25vw;
+        margin-right: 40px;
+    }
+    .info_hotel p {
+        font-size:15px;
+        line-height: 1.3;
+    }
+    .info_hotel {
+        margin:10px;
+        
+    }
+
+    #hidden_text{
+        font-size:15px;
+        line-height: 1.3;
+        margin:10px;
+    }
+    .about_hotel_text h2 {
+        font-size: 18px;
+        padding:10px;
+        margin-top: 1%;
+    }
+    .about_hotel_text {
+        margin-top:10%;
+        margin-bottom:25%;
+    }
+    .about_hotel_text a {
+        margin:10px;
+        font-size:18px;
+        margin-top:3%;
+        margin-bottom:3%;
+    }
+    .photo_hotel img {
+        margin-top:30%;
+        width:65%;
+    }
+    .staff_short_description {
+        font-size: 17px;
+        margin-bottom:5%;
+        margin-top:0;
+    }
+  
+    .quatation {
+        font-size: 17px;
+        height:13vh;
+        padding:10px;
+    }
+    .staff_image {
+        width:80%;
+    }
+
+    .staff_name {
+        font-size: 20px;
+    }
+    .staff_carousel, .slide {
+        width:70vw;
+        height: 65vh;
+    }
+    .staff_carousel {
+        margin-bottom:45%;
+    }
+    .carousel-button {
+        font-size:2rem;
+        padding: 0 .4rem;
+    }
+    td {
+        font-size: 15px;
+        line-height:1.3;
+    }
+    td:first-child { 
+        font-size: 15px;
+    }
+    th {
+        font-size:17px;
+    }
+    .scores_of_weight h2 {
+        font-size:17px;
+    }
+    .scores_of_weight h3, .calculator h3 {
+        font-size:16px;
+    }
+    .scores_of_weight {
+        margin-top:10%;
+    }
+    label {
+        font-size: 15px;
+    
+    }
+    input {
+        font-size: 15px;
+    }
+    #calculate, #clear_form {
+      margin:1%;
+      padding:4px;
+      border-radius: 10px;
+      font-size: 15px;
+      
+    }
+    
+    .messages {
+        font-size:15px;
+        margin-right:3%;
+        list-style: none;
+    }
+    table {
+        margin-top:0;
+    }
+    .contactinfo h2 {
+        font-size: 18px;
+    }
+  
+    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+        font-size:15px;
+    }
+    .date-picker {
+        width:70%;
+    }
+    input[type="radio"] {
+       height:15px;
+       width:15px;
+    }
+    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+        font-size:17px;
+    }
+    .reserveinfo h4 {
+        font-size:16px;
+    }
+    fieldset span{
+        font-size:15px;
+    }
+    #btnSubmit, #clear {
+        width:8vw;
+        font-size:15px;
+    }
+    footer {
+        font-size:12px;
+    }
+
+}
+
+
+/* Responsive website for 768 screen device */
+@media all and (max-width:888px) and (min-width:600px) {
+    header::after {
+        width: 100%;
+    }
+    .nav_links {
+        height:auto;
+        width: 70vw;
+        margin-top:13px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .nav_links a {
+        font-size: 17px;
+    }
+    .navbar {
+        height: 72px;
+    }
+    nav {
+        margin-top:-14px;
+    }
+    .logo_cat {
+        width:15vw;
+        height:auto;
+        padding:0;
+        margin-top:1%;
+      }
+      .logo {
+        height:72px;
+
+      }
+    .hamburger_menu {
+        margin-top:23px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .main {
+        grid-template-columns: 100%;
+    }
+    .inside_welcome {
+        margin-bottom:5%;
+        margin-top:5%;
+        width:80vw;  
+   }
+   .inside_welcome h2{
+    font-size:22px;
+}
+   .text p {
+    font-size: 16px;
+   }
+       .three_photos {
+        display:none;
+   }
+   .big_text {
+    font-size:35px;
+   }
+
+   .service_short_description {
+    font-size: 15px;
+    width:100%;
+    line-height: 1.3;
+    }
+.carousel_part h2 {
+    font-size: 23px;
+    }
+.carousel_part {
+    padding:25px;
+}
+.service_brand {
+    font-size: 17px;
+    }
+ .service_image img {
+    width:100%;
+    height:100%;
+    }
+.service_image {
+    width:100%;
+    height: 200px;
+    }
+.service_card {
+    width: 40vw;
+    margin-right: 40px;
+}
+.info_hotel p {
+    font-size:15px;
+    line-height: 1.3;
+}
+.info_hotel {
+    margin:13px;
+    
+}
+
+#hidden_text{
+    font-size:15px;
+    margin:13px;
+    line-height: 1.3;
+}
+.about_hotel_text h2 {
+    font-size: 18px;
+    padding:10px;
+    margin-top: 1%;
+}
+.about_hotel_text {
+    margin-top:10%;
+    margin-bottom:25%;
+    width:75vw;
+    right:-800px;
+}
+.about_hotel_text a {
+    margin:10px;
+    font-size:18px;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+.photo_hotel {
+    display:none; 
+}
+.staff_short_description {
+    font-size: 17px;
+    padding:5px;
+    margin-top:0;
+    margin-bottom:5%;
+}
+
+.quatation {
+    font-size: 16px;
+    height:14vh;
+    padding:10px;
+}
+.staff_image {
+    width:80%;
+}
+
+.staff_name {
+    font-size: 18px;
+}
+.staff_carousel, .slide {
+    width:80vw;
+    height: 65vh;
+}
+.staff_carousel {
+    margin-bottom:45%;
+}
+td {
+    font-size: 15px;
+    line-height:1.3;
+}
+td:first-child { 
+    font-size: 15px;
+}
+th {
+    font-size:16px;
+}
+.scores_of_weight h2 {
+    font-size:16px;
+}
+.scores_of_weight h3, .calculator h3 {
+    font-size:15px;
+}
+.scores_of_weight {
+    margin-top:10%;
+}
+label {
+    font-size: 15px;
+
+}
+input {
+    font-size: 15px;
+}
+#calculate, #clear_form {
+  margin:1%;
+  padding:4px;
+  border-radius: 10px;
+  font-size: 15px;
+  
+}
+.calculator {
+    width:70vw;
+}
+
+.messages {
+    font-size:15px;
+    margin-right:3%;
+    list-style: none;
+}
+table {
+    margin-top:0;
+}
+.contactinfo h2 {
+    font-size: 18px;
+}
+
+.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+    font-size:15px;
+}
+form {
+    width:80vw;
+}
+.date-picker {
+    width:90%;
+    text-align:left;
+    margin-left:7px;
+}
+input[type="radio"] {
+   height:15px;
+   width:15px;
+}
+.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+    font-size:17px;
+}
+.reserveinfo h4 {
+    font-size:16px;
+}
+fieldset span{
+    font-size:15px;
+}
+#btnSubmit, #clear {
+    font-size:13px;
+}
+footer {
+    font-size:12px;
+}
+  
+
+  
+
+}
+/* Responsive website for 599 screen device */
+@media all and (max-width: 599px) and (min-width:474px) {
+    .logo_cat {
+        width:19vw;
+        height:auto;
+        padding:0;
+        margin-top:4%;
+      }
+      .logo {
+        height:72px;
+
+      }
+
+    header::after {
+        width: 100%;
+    }
+    .nav_links {
+        height:auto;
+        width: 70vw;
+        margin-top:13px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .nav_links a {
+        font-size: 17px;
+    }
+    .navbar {
+        height: 72px;
+    }
+    nav {
+        margin-top:-14px;
+        
+    }
+  
+    .hamburger_menu {
+        margin-top:23px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .main {
+        grid-template-columns: 100%;
+    }
+
+    .inside_welcome {
+        margin-bottom:5%;
+        margin-top:5%;
+        width:80vw;  
+   }
+   .inside_welcome h2{
+    font-size:19px;
+}
+   .text p {
+    font-size: 15px;
+   }
+    .three_photos {
+    display:none;
+   }
+   .big_text {
+    font-size:30px;
+    margin-top:15px;
+   }
+
+   .service_short_description {
+    font-size: 15px;
+    width:100%;
+    line-height: 1.3;
+    }
+.carousel_part h2 {
+    font-size: 19px;
+    }
+.carousel_part {
+   padding:25px;
+}
+.service_brand {
+    font-size: 17px;
+    }
+ .service_image img {
+    width:100%;
+    height:100%;
+    }
+.service_image {
+    width:100%;
+    height: 200px;
+    }
+.service_card {
+    width: 48vw;
+    margin-right: 40px;
+}
+.info_hotel p {
+    font-size:15px;
+    line-height: 1.3;
+}
+.info_hotel {
+    margin:13px;
+    
+}
+
+#hidden_text{
+    font-size:15px;
+    margin:13px;
+    line-height: 1.3;
+}
+.about_hotel_text h2 {
+    font-size: 18px;
+    padding:10px;
+    margin-top: 1%;
+}
+.about_hotel_text {
+    margin-top:10%;
+    margin-bottom:25%;
+    width:85vw;
+    right:-800px;
+}
+.about_hotel_text a {
+    margin:10px;
+    font-size:18px;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+.photo_hotel {
+    display:none; 
+}
+.staff_short_description {
+    margin-top: 30%;
+    font-size: 15px;
+    padding:8px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 4;
+    grid-row-end:5;
+}
+
+.quatation {
+    font-size: 14px;
+    padding:10px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end:3;
+    width:100%;
+    margin:0;
+    border-radius: 0;
+}
+.staff_image {
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end:4;
+    width:43%;
+    margin-left:30%;
+    top:15%;
+   
+}
+
+.staff_name {
+    font-size: 16px;
+    padding:10px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+.staff_carousel, .slide {
+    width:80vw;
+    height: 60vh;
+}
+.staff_carousel {
+    margin-bottom:45%;
+}
+.slide {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+.carousel-button {
+    font-size:1.5rem;
+    padding: 0 .4rem;
+}
+td {
+    font-size: 13px;
+    line-height:1.3;
+}
+td:first-child { 
+    font-size: 13px;
+}
+th {
+    font-size:14px;
+}
+.scores_of_weight h2 {
+    font-size:14px;
+}
+.scores_of_weight h3, .calculator h3 {
+    font-size:14px;
+}
+.scores_of_weight {
+    width:95vw;
+    margin-top:10%;
+    
+}
+label {
+    font-size: 13px;
+}
+input {
+    font-size: 13px;
+}
+#calculate, #clear_form {
+  margin:1%;
+  padding:3px;
+  border-radius: 10px;
+  font-size: 13px;
+  
+}
+.calculator {
+    width:80vw;
+}
+
+.messages {
+    font-size:13px;
+    margin-right:3%;
+    list-style: none;
+}
+table {
+    margin-top:0;
+    width:90vw;
+}
+.calculator div {
+    margin-top:20px;
+}
+.contactinfo h2 {
+    font-size: 18px;
+}
+
+.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+    font-size:15px;
+}
+form {
+    width:80vw;
+}
+.date-picker {
+    width:90%;
+    text-align:left;
+    margin-left:7px;
+}
+input[type="radio"] {
+   height:15px;
+   width:15px;
+}
+.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+    font-size:17px;
+}
+.reserveinfo h4 {
+    font-size:16px;
+}
+fieldset span{
+    font-size:15px;
+}
+#btnSubmit, #clear {
+    font-size:13px;
+    width:15vw;
+}
+
+footer {
+    font-size:12px;
+}
+  
+}
+
+/* Responsive website for 473 screen device */
+@media all and (max-width: 473px) and (min-width:431px) {
+    .logo_cat {
+        width:26vw;
+        height:auto;
+        padding:0;
+        margin-top:4%;
+      }
+      .logo {
+        height:72px;
+
+      }
+    header::after {
+        width: 100%;
+    }
+    .nav_links {
+        height:auto;
+        width: 70vw;
+        margin-top:13px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .nav_links a {
+        font-size: 17px;
+    }
+    .navbar {
+        height: 72px;
+    }
+    nav {
+        margin-top:-14px;
+    }
+ 
+    .hamburger_menu {
+        margin-top:23px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .main {
+        grid-template-columns: 100%;
+    }
+
+    .inside_welcome {
+        margin-bottom:5%;
+        margin-top:5%;
+        width:80vw;  
+   }
+   .inside_welcome h2{
+    font-size:18px;
+}
+   .text p {
+    font-size: 15px;
+   }
+    .three_photos {
+    display:none;
+   }
+   .big_text {
+    font-size:28px;
+    margin-top:25px;
+   }
+
+   .service_short_description {
+    font-size: 15px;
+    width:100%;
+    line-height: 1.3;
+    }
+.carousel_part h2 {
+    font-size: 19px;
+    }
+.carousel_part {
+    padding:25px;
+}
+.service_brand {
+    font-size: 16px;
+    }
+ .service_image img {
+    width:100%;
+    height:100%;
+    }
+.service_image {
+    width:100%;
+    height: 200px;
+    }
+.service_card {
+    width: 56vw;
+    margin-right: 45px;
+}
+.info_hotel p {
+    font-size:15px;
+    line-height: 1.3;
+}
+.info_hotel {
+    margin:13px;
+    
+}
+
+#hidden_text{
+    font-size:15px;
+    margin:13px;
+    line-height: 1.3;
+}
+.about_hotel_text h2 {
+    font-size: 18px;
+    padding:10px;
+    margin-top: 1%;
+}
+.about_hotel_text {
+    margin-top:10%;
+    margin-bottom:25%;
+    width:85vw;
+    right:-800px;
+}
+.about_hotel_text a {
+    margin:10px;
+    font-size:18px;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+.photo_hotel {
+    display:none; 
+}
+.staff_short_description {
+    margin-top: 35%;
+    font-size: 15px;
+    padding:8px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 4;
+    grid-row-end:5;
+}
+
+
+.quatation {
+    font-size: 13px;
+    margin-left: 4%;
+    padding:5px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end:3;
+    width:100%;
+    margin:0;
+    border-radius: 0;
+}
+.staff_image {
+    width:50%;
+    margin-left:30%;
+    top:15%;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end:4;
+}
+
+.staff_name {
+    font-size: 16px;
+    padding:10px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+.staff_carousel, .slide {
+    width:80vw;
+    height: 60vh;
+}
+.staff_carousel {
+    margin-bottom:45%;
+}
+.slide {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+.carousel-button {
+    font-size:1.5rem;
+    padding: 0 .4rem;
+}
+td {
+    font-size: 13px;
+    line-height:1.3;
+}
+td:first-child { 
+    font-size: 13px;
+}
+th {
+    font-size:14px;
+}
+.scores_of_weight h2 {
+    font-size:14px;
+}
+.scores_of_weight h3, .calculator h3 {
+    font-size:14px;
+}
+.scores_of_weight {
+    width:95vw;
+    margin-top:10%;
+    
+}
+label {
+    font-size: 13px;
+}
+input {
+    font-size: 13px;
+}
+#calculate, #clear_form {
+  margin:1%;
+  padding:3px;
+  border-radius: 10px;
+  font-size: 13px;
+  
+}
+.calculator {
+    width:90vw;
+}
+
+.messages {
+    font-size:13px;
+    margin-right:3%;
+    list-style: none;
+}
+table {
+    margin-top:0;
+    width:90vw;
+}
+.calculator div {
+    margin-top:20px;
+}
+.calculator div {
+    margin-top:20px;
+}
+.contactinfo h2 {
+    font-size: 18px;
+}
+
+.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+    font-size:15px;
+}
+form {
+    width:80vw;
+}
+.date-picker {
+    width:100%;
+    text-align:left;
+}
+input[type="radio"] {
+   height:15px;
+   width:15px;
+}
+.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+    font-size:17px;
+}
+.reserveinfo h4 {
+    font-size:16px;
+}
+fieldset span{
+    font-size:15px;
+}
+#btnSubmit, #clear {
+    font-size:13px;
+    width:15vw;
+}
+footer {
+    font-size:12px;
+}
+  
+}
+
+
+/* Responsive website for 430 screen device */
+
+@media all and (max-width:430px) and (min-width:324px) {
+    .logo_cat {
+        width:26vw;
+        height:auto;
+        padding:0;
+        margin-top:8%;
+      }
+      .logo {
+        height:72px;
+
+      }
+    header::after {
+        width: 100%;
+    }
+    .nav_links {
+        height:auto;
+        width: 70vw;
+        margin-top:13px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .nav_links a {
+        font-size: 17px;
+    }
+    .navbar {
+        height: 72px;
+    }
+    nav {
+        margin-top:-14px;
+    }
+    .hamburger_menu {
+        margin-top:23px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .main {
+        grid-template-columns: 100%;
+    }
+
+    .inside_welcome {
+        margin-bottom:5%;
+        margin-top:5%;
+        width:80vw;  
+   }
+   .inside_welcome h2{
+    font-size:16px;
+}
+   .text p {
+    font-size: 13px;
+   }
+    .three_photos {
+    display:none;
+   }
+   .big_text {
+    font-size:22px;
+    margin-top: 35px;
+   }
+
+   .service_short_description {
+    font-size: 13px;
+    width:100%;
+    line-height: 1.3;
+    }
+.carousel_part h2 {
+    font-size: 16px;
+    }
+.carousel_part {
+    padding:27px;
+}
+.service_brand {
+    font-size: 14px;
+    }
+ .service_image img {
+    width:100%;
+    height:100%;
+    }
+.service_image {
+    width:100%;
+    height: 200px;
+    }
+.service_card {
+    width: 70vw;
+    margin-right: 40px;
+}
+.info_hotel p {
+    font-size:13px;
+    line-height: 1.3;
+}
+.info_hotel {
+    margin:5px;
+    
+}
+
+#hidden_text{
+    font-size:13px;
+    margin:5px;
+    line-height: 1.3;
+}
+.about_hotel_text h2 {
+    font-size: 15px;
+    padding:7px;
+    margin-top: 1%;
+}
+.about_hotel_text {
+    margin-top:10%;
+    margin-bottom:25%;
+    width:85vw;
+    right:-800px;
+}
+.about_hotel_text a {
+    margin:10px;
+    font-size:16px;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+.photo_hotel {
+    display:none; 
+}
+.staff_short_description {
+    margin-top: 35%;
+    font-size: 15px;
+    padding:6px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 4;
+    grid-row-end:5;
+    
+}
+.carousel-button {
+    font-size:1.5rem;
+    padding: 0 .4rem;
+    top:40%;
+}
+
+.quatation {
+    font-size: 13px;
+    margin-left: 4%;
+    padding:5px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end:3;
+    width:100%;
+    margin:0;
+    border-radius: 0;
+}
+.staff_image {
+    width:50%;
+    margin-left:30%;
+    top:15%;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end:4;
+}
+.staff_name {
+    font-size: 13px;
+    padding:10px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+.staff_carousel, .slide {
+    width:80vw;
+    height: 55vh;
+    
+}
+.staff_carousel {
+    margin-bottom:45%;
+}
+.slide {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+td {
+    font-size: 13px;
+    line-height:1.3;
+}
+td:first-child { 
+    font-size: 13px;
+}
+th {
+    font-size:14px;
+}
+.scores_of_weight h2 {
+    font-size:14px;
+}
+.scores_of_weight h3, .calculator h3 {
+    font-size:14px;
+}
+.scores_of_weight {
+    width:95vw;
+    margin-top:10%;
+    
+}
+label {
+    font-size: 13px;
+}
+input {
+    font-size: 12px;
+}
+#calculate, #clear_form {
+  margin:1%;
+  padding:3px;
+  border-radius: 10px;
+  font-size: 13px;
+  
+}
+.calculator {
+    width:100vw;
+}
+
+.messages {
+    font-size:13px;
+    margin-right:3%;
+    list-style: none;
+}
+table {
+    margin-top:0;
+    width:90vw;
+}
+.calculator div {
+    margin-top:20px;
+}
+.contactinfo h2 {
+    font-size: 17px;
+}
+
+.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+    font-size:13px;
+}
+form {
+    width:90vw;
+}
+.date-picker {
+    width:97%;
+    text-align:left;
+    margin-left:2px;
+}
+
+input[type="radio"] {
+   height:13px;
+   width:13px;
+}
+.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+    font-size:15px;
+}
+.reserveinfo h4 {
+    font-size:14px;
+}
+fieldset span{
+    font-size:13px;
+}
+#btnSubmit, #clear {
+    font-size:13px;
+    width:20vw;
+}
+.contactinfo div input, .catinfo div input {
+    margin-left:0;
+}
+
+.additionalinfo div label {
+    margin-left:0;
+}
+.date-picker label {
+    margin-left: 0;
+}
+
+
+footer {
+    font-size:11px;
+}
+
+}
+
+
+
+
+
+
+/* Responsive website for 323 screen device */
+
+@media all and (max-width:323px) {
+    .logo_cat {
+        width:28vw;
+        height:auto;
+        padding:0;
+        margin-top:24%;
+      }
+      .logo {
+        height:72px;
+
+      }
+    header::after {
+        width: 100%;
+    }
+    .nav_links {
+        height:auto;
+        width: 70vw;
+        margin-top:13px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .nav_links a {
+        font-size: 17px;
+    }
+    .navbar {
+        height: 72px;
+    }
+    nav {
+        margin-top:-14px;
+    }
+
+    .hamburger_menu {
+        margin-top:23px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .main {
+        grid-template-columns: 100%;
+    }
+
+    .inside_welcome {
+        margin-bottom:5%;
+        margin-top:5%;
+        width:80vw;  
+   }
+   .inside_welcome h2{
+    font-size:16px;
+}
+   .text p {
+    font-size: 13px;
+   }
+    .three_photos {
+    display:none;
+   }
+   .big_text {
+    font-size:20px;
+    margin-top:45px;
+   }
+
+   .service_short_description {
+    font-size: 13px;
+    width:100%;
+    line-height: 1.3;
+    }
+.carousel_part h2 {
+    font-size: 16px;
+    }
+.carousel_part {
+   padding:30px;
+}
+.service_brand {
+    font-size: 14px;
+    }
+ .service_image img {
+    width:100%;
+    height:100%;
+    }
+.service_image {
+    width:70vw;
+    height: 200px;
+    }
+.service_card {
+    width: 70vw;
+    margin-right: 40px;
+}
+.info_hotel p {
+    font-size:13px;
+    line-height: 1.3;
+}
+.info_hotel {
+    margin:5px;
+    
+}
+
+#hidden_text{
+    font-size:13px;
+    margin:5px;
+    line-height: 1.3;
+}
+.about_hotel_text h2 {
+    font-size: 15px;
+    padding:7px;
+    margin-top: 1%;
+}
+.about_hotel_text {
+    margin-top:10%;
+    margin-bottom:25%;
+    width:85vw;
+    right:-800px;
+}
+.about_hotel_text a {
+    margin:10px;
+    font-size:16px;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+.photo_hotel {
+    display:none; 
+}
+.staff_short_description {
+    margin-top: 35%;
+    font-size: 14px;
+    padding:6px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 4;
+    grid-row-end:5;
+    
+}
+
+.quatation {
+    font-size: 13px;
+    padding:5px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end:3;
+    width:100%;
+    margin:0;
+    border-radius: 0;
+}
+.staff_image {
+    width:50%;
+    margin-left:30%;
+    top:15%;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end:4;
+}
+
+
+.staff_name {
+    font-size: 13px;
+    padding:10px;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+.staff_carousel, .slide {
+    width:80vw;
+    height: 55vh;
+}
+.staff_carousel {
+    margin-bottom:45%;
+}
+.slide {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+.carousel-button {
+    font-size:1.5rem;
+    padding: 0 .4rem;
+    top:40%;
+}
+td {
+    font-size: 13px;
+    line-height:1.3;
+}
+td:first-child { 
+    font-size: 13px;
+}
+th {
+    font-size:14px;
+}
+.scores_of_weight h2 {
+    font-size:14px;
+}
+.scores_of_weight h3, .calculator h3 {
+    font-size:14px;
+}
+.scores_of_weight {
+    width:95vw;
+    margin-top:10%;
+    
+}
+label {
+    font-size: 13px;
+}
+input {
+    font-size: 12px;
+}
+#calculate, #clear_form {
+  margin:1%;
+  padding:3px;
+  border-radius: 10px;
+  font-size: 13px;
+  
+}
+.calculator {
+    width:100vw;
+}
+
+.messages {
+    font-size:13px;
+    margin-right:3%;
+    list-style: none;
+}
+table {
+    margin-top:0;
+    width:90vw;
+}
+.calculator div {
+    margin-top:20px;
+}
+.contactinfo h2 {
+    font-size: 17px;
+}
+
+.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
+    font-size:13px;
+}
+form {
+    width:90vw;
+}
+.date-picker {
+    width:97%;
+    text-align:left;
+    margin-left:2px;
+}
+
+input[type="radio"] {
+   height:13px;
+   width:13px;
+}
+.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
+    font-size:15px;
+}
+.reserveinfo h4 {
+    font-size:14px;
+}
+fieldset span{
+    font-size:13px;
+}
+#btnSubmit, #clear {
+    font-size:13px;
+    width:20vw;
+}
+.contactinfo div input, .catinfo div input {
+    margin-left:0;
+}
+
+.additionalinfo div label {
+    margin-left:0;
+}
+.date-picker label {
+    margin-left: 0;
+}
+footer {
+    font-size:11px;
+}
+  
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
